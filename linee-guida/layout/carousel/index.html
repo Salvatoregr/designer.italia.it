@@ -15,7 +15,7 @@
     </script><![endif]-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Componenti | Linee guida di design per i siti web della PA</title>
+    <title>Utilizzo di carousel | Linee guida di design per i siti web della PA</title>
     <meta name="description" content="Progettare il design dei siti web della Pubblica Amministrazione (versione alfa)">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -203,11 +203,33 @@
   </div><!--/.sidebar-offcanvas-->
 
   <article class="col-sm-12 col-md-8" id="main" tabindex="0">
-    <h2>Componenti</h2>
-    <p>In questa sezione sono disponibili componenti specifici dell&#39;interfaccia (UI)
-che possono essere integrati nei siti e nelle applicazioni web.</p>
-<p>Al momento sono disponibili i <a href="linee-guida/componenti/spid">componenti per l’integrazione del Sistema Pubblico 
-di Identità Digitale SPID</a></p>
+    <h2>Utilizzo di carousel</h2>
+    <div class="lg-callout lg-callout-should">
+<mark>SI DOVREBBE</mark>
+Evitare l’utilizzo di carousel (slider) automatici.
+</div>
+
+<p>I dati statistici raccolti riguardo l’interazione degli utenti con i carousel ne rivelano un utilizzo effettivo marginale (1%).</p>
+<p>Lo <strong>scorrimento automatico dei contenuti è generalmente sconsigliato</strong> poiché riduce la visibilità degli stessi e reca fastidio agli utenti;
+leggere l’intero contenuto di una slide prima che venga sostituita automaticamente dalla successiva può esser difficoltoso
+e introduce problemi di accessibilità per chi utilizza una tastiera o uno screen reader:
+è tecnicamente complesso implementare un carousel perfettamente accessibile.</p>
+<p>Tra le più comuni problematiche nell’implementazione:</p>
+<ul>
+<li>lo scorrimento dei contenuti parte in automatico senza che sia richiesta nessuna interazione</li>
+<li>non è possibile fermare e/o far ripartire lo scorrimento</li>
+<li>non sono preventivamente riportati i titoli dei contenuti costringendo l’utente a doverne forzare lo scorrimento o aspettare un tempo prefissato affinché siano rivelati</li>
+<li>i controlli per scorrere le slide non sono ben visbili (colore / trasparenza) e/o sono troppo piccoli</li>
+</ul>
+<p>Nel caso si configuri l&#39;assoluta necessità di utilizzare un carousel:</p>
+<ul>
+<li>i titoli dei contenuti devono essere visibili in ogni momento (fuori dalle slide quindi)</li>
+<li>l’utente deve poter controllare lo scorrimento (stop / avvio)</li>
+<li>i controlli devono poter esser utilizzabili anche tramite tastiera (oltre che con mouse / touch)</li>
+</ul>
+<p>Nella maggior parte dei casi risulta più conveniente sostituire il carousel con una presentazione statica dei contenuti
+(ad esempio, una galleria di immagini) in modo che siano tutti visibili immediatamente o tramite scorrimento manuale
+non automatico.</p>
 
   </article>
 

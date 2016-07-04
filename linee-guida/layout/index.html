@@ -15,7 +15,7 @@
     </script><![endif]-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Componenti | Linee guida di design per i siti web della PA</title>
+    <title>Indicazioni sul layout | Linee guida di design per i siti web della PA</title>
     <meta name="description" content="Progettare il design dei siti web della Pubblica Amministrazione (versione alfa)">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -203,11 +203,28 @@
   </div><!--/.sidebar-offcanvas-->
 
   <article class="col-sm-12 col-md-8" id="main" tabindex="0">
-    <h2>Componenti</h2>
-    <p>In questa sezione sono disponibili componenti specifici dell&#39;interfaccia (UI)
-che possono essere integrati nei siti e nelle applicazioni web.</p>
-<p>Al momento sono disponibili i <a href="linee-guida/componenti/spid">componenti per l’integrazione del Sistema Pubblico 
-di Identità Digitale SPID</a></p>
+    <h2>Indicazioni sul layout</h2>
+    <div class="lg-callout lg-callout-should">
+<mark>SI DOVREBBE</mark>
+Utilizzare un layout essenziale.
+</div>
+
+<p>L&#39;impaginazione dei contenuti tramite un layout lineare (una o due colonne) favorisce la <strong>rapida scansione delle informazioni</strong>
+e ne agevola la consultazione soprattutto su <em>touchscreen</em>, dove il pattern di interazione più funzionale
+è lo scorrimento verticale della pagina.</p>
+<p>Casi d’uso validi per l’utilizzo di <strong>una colonna laterale</strong> ( <code>&lt;nav&gt;</code>, <code>&lt;aside&gt;</code>) sono
+tutti e solo quelli dove sussiste un’immediata correlazione semantica con il contenuto principale:</p>
+<ul>
+<li>menu contestuale della sezione del sito correntemente visualizzata</li>
+<li>elenco di sezioni / contenuti / documenti correlati</li>
+</ul>
+<div class="lg-callout lg-callout-could">
+<mark>SI PUÒ</mark>
+Elenchi di contenuti omogenei (ad esempio: anteprime di notizie o eventi) possono essere presentati tramite <strong>card</strong> o liste posizionate in una <strong>griglia responsive</strong>.
+</div>
+
+<p>L&#39;utilizzo di card favorisce la consultazione dei contenuti sugli schermi più piccoli.</p>
+<p>Più in generale, laddove i dati non hanno una struttura prevalentemente tabulare, è consigliato l&#39;utilizzo di card o liste al posto che di tabelle (<code>table</code>) che risultano più difficili da rendere fruibili in maniera efficace sui dispositivi mobili.</p>
 
   </article>
 

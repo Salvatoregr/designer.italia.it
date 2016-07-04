@@ -15,7 +15,7 @@
     </script><![endif]-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contenuti testuali | Linee guida di design per i siti web della PA</title>
+    <title>Architettura dell&#39;informazione | Linee guida di design per i siti web della PA</title>
     <meta name="description" content="Progettare il design dei siti web della Pubblica Amministrazione (versione alfa)">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -203,36 +203,164 @@
   </div><!--/.sidebar-offcanvas-->
 
   <article class="col-sm-12 col-md-8" id="main" tabindex="0">
-    <h2>Contenuti testuali</h2>
-    <p>La scrittura dei contenuti è parte integrante del processo di design e costituisce un elemento importante per il raggiungimento della piena usabilità del sito web.</p>
-<h3 id="la-scrittura-del-testo">La scrittura del testo</h3>
+    <h2>Architettura dell'informazione</h2>
+    <p>L’architettura dell’informazione è l’organizzazione semantica e logica di ambienti informativi, sia fisici sia digitali, e favorisce la trovabilità e la fruibilità di informazioni e servizi. L’architettura dell’informazione deve essere progettata intorno ai bisogni delle persone, da cui deriva il nome &quot;user-centered design&quot;.</p>
+<p>Le persone usano un sito web di una Pubblica Amministrazione principalmente per trovare informazioni, soluzioni a problemi, accedere a servizi online.
+Un sito in cui l’informazione è ben organizzata determina una diminuzione di:</p>
+<ul>
+<li>Richieste di assistenza attraverso call center, email, telefono, ...</li>
+<li>Tempo e costi di gestione del sito</li>
+<li>Attività di re-design del sito</li>
+</ul>
+<h3 id="user-centered-design">User-centered design</h3>
+<p>Lo user centered design è un insieme di tecniche usate per far emergere i bisogni effettivi delle persone per cui si sta progettando un contenuto, coinvolgendo le persone stesse nel processo di progettazione. Per &quot;persone&quot; si intendono tutti i portatori di interesse (stakeholder) del progetto.
+Nel caso della Pubblica Amministrazione:</p>
+<ul>
+<li>Cittadini</li>
+<li>Aziende</li>
+<li>Dipendenti di altre amministrazioni o istituzioni</li>
+<li>Committenti</li>
+</ul>
+<p>Le tecniche di ricerca più utilizzate nello user centered design consistono in:</p>
+<ul>
+<li>Realizzazione di interviste con gli utenti del sito interessati</li>
+<li>Profilazione di utenti tipo, o personas</li>
+<li>Definizione di scenari di utilizzo del sitoi</li>
+<li>Card sorting delle sezioni del sito</li>
+<li>Test di usabilità strutturati, condotti con persone fisiche in ambiente controllato</li>
+</ul>
+<h3 id="il-menu-di-navigazione-principale">Il menu di navigazione principale</h3>
+<p>In un approccio progettuale e organizzativo centrato sulla persona, è fondamentale ripensare al menu principale di navigazione come ad uno strumento di servizio.</p>
 <div class="lg-callout lg-callout-should">
 <mark>SI DOVREBBE</mark>
-Si dovrebbe evitare l’utilizzo di un linguaggio gergale e specialistico o l’uso di termini e frasi di difficile comprensione.
+Il menu di  navigazione deve rispondere anzitutto ai bisogni di un pubblico che ragiona in termini di problemi o temi molto pratici.
+ Il menu principale non può quindi limitarsi a riproporre l’organigramma dell’amministrazione.
 </div>
 
-<p>Il web richiede l’uso di uno stile più informale e semplice. La prima regola di un buon testo
-è dunque quella di essere chiari, diretti e sintetici. Sarebbe preferibile utilizzare per i testi descrittivi
-solo i termini compresi nel Vocabolario di base della lingua italiana (Tullio De Mauro,
-Guida all’uso delle parole, Paravia, 1980) per garantire la comprensione al più vasto pubblico possibile.
-Dove è necessario utilizzare una terminologia specifica, o tecnica, vanno predisposti i necessari
-strumenti di aiuto (tooltip, glossario, ecc.). Sciogliete sempre le abbreviazioni e le sigle.</p>
-<h3 id="link">Link</h3>
-<p>Si dovrebbero evitare “pop-up” o aperture di pagina esterne. Nel caso di inserimento di link esterni questi dovrebbero essere accompagnati da un avviso leggibile anche dagli screen reader (ad esempio &quot;Questo link si aprirà in una nuova finestra&quot;).</p>
-<div class="lg-callout lg-callout-must">
-<mark>SI DEVE</mark>
-I link devono essere costituiti da parole-chiave significative. Non usare mai la formula &quot;clicca qui&quot; per attivare un link.
+<!-- TODO
+ Altre logiche di navigazione basate su metafore, come ad esempio gli "eventi della vita", sono da evitare perché costringono l’utente ad adattarsi forzatamente a un modello concettuale meno naturale rispetto a quello per "argomento".
+-->
+<h3 id="il-menu-di-navigazione-dei-siti-dei-comuni">Il menu di navigazione dei siti dei Comuni</h3>
+<div class="lg-callout lg-callout-should">
+<mark>SI DOVREBBE</mark>
+Le voci di primo livello del menu principale di una Amministrazione comunale dovrebbero essere
+<ul>
+<li>Aree tematiche</li>
+<li>L&#39;Amministrazione</li>
+<li>Vivere a [Nome del Comune]</li>
+<li>Menu opzionale</li>
 </div>
 
-<h3 id="corretta-ortografia">Corretta ortografia</h3>
-<p>Si raccomanda una particolare attenzione alla corretta ortografia della lingua italiana, soprattutto per quanto riguarda l’uso degli accenti e degli apostrofi. Pertanto si dovranno utilizzare le corrette entità HTML, scrivendo È (È) e non E’. Analogamente si dovranno utilizzare le virgolette alte doppie “ ” (&ldquote; &rdquote;) o le virgolette alte semplici ‘ ’ (&lsquote; &rsquote;) al posto delle virgolette indifferenziate dritte.</p>
-<h3 id="l-interfaccia">L’interfaccia</h3>
-<p>Nel definire le voci del menu, della navigazione e dei comandi si deve usare una terminologia univoca, dove la stessa definizione non conduca, in luoghi diversi, ad azioni differenti. Nei bottoni e nelle etichette descrivere in modo coerente e puntuale quali sono le azioni che ci dobbiamo aspettare nell’eseguire un comando o nel riempire un form. Siate specifici: “Cerca” invece di “Invia”, “Paga” invece di “Ok”.Il significato di “Cancella” è diverso da “Annulla”. Siate espliciti: “Pubblica Amministrazione” invece di “PA”.</p>
-<h3 id="rendere-chiara-la-gerarchia">Rendere chiara la gerarchia</h3>
-<div class="lg-callout lg-callout-must">
-<mark>SI DEVE</mark>
-Per una corretta definizione della struttura gerarchica dei contenuti, la suddivisione in parti deve essere espressa attraverso l’uso dei tag semantici disponibili in HTML5, quali <code>&lt;article&gt;, &lt;aside&gt;, &lt;figcaption&gt;, &lt;header&gt;, &lt;footer&gt;</code>, ecc., al posto del generico divisore <code>&lt;div&gt;</code>.
+<p>L&#39;ordine delle voci segue una logica di importanza: prima quelle tematiche orientate al pubblico principale, poi quelle più istituzionali.</p>
+<ul>
+<li><strong>Aree tematiche</strong>: contiene l’accesso a tutti i contenuti e servizi del sito secondo una classificazione tematica. Vedi sotto Aree tematiche [link].</li>
+<li><strong>L’Amministrazione</strong>: contiene tutte le informazioni amministrative e legali che riguardano il sindaco, la composizione della giunta, ecc.</li>
+<li>Vivere a <strong>[Nome del comune]</strong>: contiene tutte le informazioni pratico-orientative riguardanti il territorio, come eventi e turismo.</li>
+<li><strong>Voce opzionale a scelta del Comune</strong>: il sito di ogni Comune ha a disposizione una eventuale voce che permetta all’Amministrazione di evidenziare o valorizzare contenuti peculiari alla specifica realtà locale. La voce opzionale deve contenere al massimo tre parole, deve essere realmente necessaria e contenere informazioni diverse rispetto alle voci sopra elencate.</li>
+</ul>
+<h3 id="aree-tematiche">Aree tematiche</h3>
+<p>L’accesso per tema non è mutuamente esclusivo rispetto a un accesso per tipologia organizzativa o istituzionale. Esse costituiscono in effetti due modalità complementari di accesso a contenuti e servizi. Ciò significa che se alcuni contenuti sono specifici e si trovano solo in un’area, molti contenuti saranno comuni: ciò che cambia è la modalità, la logica attraverso cui vengono recuperati. Così, ad esempio, selezionando il tema &quot;casa&quot; l’utente potrà visualizzare anche i riferimenti e i contatti degli uffici collegati, le notizie o eventi su questo tema ecc.</p>
+<p>Poiché ogni area tematica copre uno spettro ampio di contenuti e servizi, è utile strutturare ogni area in sottocategorie.
+Una stessa sottocategoria può comparire in più di un’area tematica.</p>
+<p>Per la scelta delle etichette delle categorie e sottocategorie è utile:</p>
+<ul>
+<li>fare in modo che le parole-chiave compaiano per prime</li>
+<li>evitare un linguaggio burocratico</li>
+<li>verificare quali termini gli utenti cercano nel sito e integrarle nel titolo</li>
+<li>effettuare test con utenti reali</li>
+</ul>
+<h3 id="possibile-struttura-interna-del-menu-tematico">Possibile struttura interna del menu tematico</h3>
+<ul>
+<li><strong>Ambiente</strong>
+Avere un animale, Fare la raccolta differenziata, Fare sport, Forme di mobilità alternativa, Vivere la natura    </li>
+<li><strong>Casa</strong>
+Acquistare casa, Affittare/prendere in affitto casa, Cambiare casa, Costruire ristrutturare casa</li>
+<li><strong>Certificati e documenti</strong>
+Anagrafico e di stato civile, Edilizio e urbanistico</li>
+<li><strong>Cultura e tempo libero</strong>
+Biblioteche e archivio storico, Eventi culturali, Fare sport    </li>
+<li><strong>Denunce</strong>
+Denunce civili e penali, Pagare o ricorrere contro sanzioni</li>
+<li><strong>Elezioni</strong>
+Informazioni sulle consultazioni elettorali</li>
+<li><strong>Famiglia</strong>
+Adozione, Aiuto e sostegno familiare, Associazioni che si occupano di famiglia, Matrimonio, Avere un figlio, Adozione, Prima infanzia</li>
+<li><strong>Imprese</strong>
+Aprire un&#39;attività, Cessare un&#39;attività    </li>
+<li><strong>Innovazione e smart city</strong>
+SPID, Pagamenti elettronici, Anagrafe unica popolazione residente</li>
+<li><strong>Lavoro</strong>
+Cercare lavoro, Svolgere commercio fisso o ambulante    </li>
+<li><strong>Salute</strong>
+Assistenza medica, Assistenza sociale    </li>
+<li><strong>Studio</strong>
+Scuole elementari e d&#39;infanzia    </li>
+<li><strong>Tasse</strong>
+Imposta sugli immobili, Tariffe, imposte e canoni comunali    </li>
+<li><strong>Trasporti</strong>
+Forme di mobilità alternativa, Utilizzo dell&#39;automobile, Utilizzo di motocicli    </li>
+<li><strong>Uffici comunali</strong>
+Informazioni di contatto, orari di apertura al pubblico, competenze e altro ancora relativi agli uffici comunali</li>
+<li><strong>Volontariato</strong>
+Cittadinanza attiva, Fare il volontario, Organizzare un evento, Servizio civile</li>
+</ul>
+<h3 id="classificazione-per-profilo">Classificazione per profilo</h3>
+<p>La classificazione dei contenuti per profilo utente permette all’utente un accesso mirato ai contenuti e servizi sulla base di specifici tipologie di utenti. Le ricerche sul campo e l’esperienza sconsigliano tuttavia di usare la navigazione per profilo come unico criterio di accesso ai contenuti, in quanto non tutti gli utenti potrebbero facilmente riconoscersi in un profilo.</p>
+<div class="lg-callout lg-callout-could">
+<mark>SI PUÒ</mark>
+Ogni singolo contenuto, al momento dell’inserimento e della pubblicazione online, può  essere associato a uno o più profili di utenti target.
+Il profilo costituisce quindi un&#39;informazione aggiuntiva allo specifico contenuto.
 </div>
+
+<p>L&#39;utente esterno che naviga il sito può selezionare un link relativo ad uno specifico profilo, posto all’interno della pagina, e accedere a una sezione che aggrega e organizza automaticamente tutti i contenuti associati a quel profilo selezionato; ad esempio: le  aree tematiche, notizie ed eventi, scadenze, normative, concorsi, siti dedicati.</p>
+<h3 id="possibile-elenco-di-profili-di-utenti">Possibile elenco di profili di utenti</h3>
+<p>(in ordine alfabetico)</p>
+<ul>
+<li><strong>Anziano</strong>
+Informazioni e consigli utili per le persone anziane</li>
+<li><strong>Automobilista</strong>
+Informazioni utili per chi usa o vuole usare l&#39;automobile</li>
+<li><strong>Bambino</strong>
+Servizi, iniziative, progetti, eventi rivolti ai bambini</li>
+<li><strong>Cittadino attivo</strong>
+Informazioni su iniziative a attività di recupero e cura dei beni comuni da parte dei cittadini e modalità di presentazione di segnalazioni, suggerimenti e reclami</li>
+<li><strong>Consumatore</strong>
+Informazioni utili per i consumatori. Aggiornamenti statistici sui prezzi.</li>
+<li><strong>Disabile</strong>
+Collegamenti e istruzioni utili per chi ha a che fare con una forma di disabilità</li>
+<li><strong>Donna</strong>
+Informazioni e consigli utili per le donne</li>
+<li><strong>Elettore / Scrutatore</strong>
+Informazioni relative alle consultazioni elettorali</li>
+<li><strong>Famiglia</strong>
+Avvisi, iniziative e servizi rivolti alla famiglia e informazioni relative alle associazioni che si occupano di famiglia</li>
+<li><strong>Giovane</strong>
+Informazioni e consigli utili per i giovani</li>
+<li><strong>Immigrato (o straniero)</strong>
+Informazioni e consigli utili per gli immigrati</li>
+<li><strong>Imprenditore</strong>
+Informazioni utili a chi svolge o intende svolgere attività di impresa</li>
+<li><strong>Italiano all&#39;estero</strong>
+Informazione per chi è italiano e risiede o deve trasferirsi all&#39;estero</li>
+<li><strong>Lavoratore / In cerca di lavoro</strong>
+Informazioni utili per chi lavora o è in cerca di lavoro</li>
+<li><strong>Persona con disagio sociale</strong>
+Istruzioni e consigli utili per disagi sociali</li>
+<li><strong>Studente</strong>
+Informazioni utili per gli studenti</li>
+<li><strong>Turista</strong>
+Informazioni utili per i turisti</li>
+</ul>
+<h3 id="il-motore-di-ricerca">Il motore di ricerca</h3>
+<p>I risultati efficaci nella ricerca sono sinonimo di una buona classificazione dei contenuti e di una efficiente strutturazione dell&#39;architettura informativa complessiva.</p>
+<p>È opportuno quindi stabilire in maniera chiara il criterio con il quale i risultati vengono estratti e presentati.
+I metadati associati ai contenuti aiutano a offrire risultati di ricerca più precisi e utili all&#39;utente.</p>
+<p>La prima selezione dei contenuti presenti nel sito da parte del motore di ricerca avviene attraverso la presenza della parola cercata nel titolo e nel testo della pagina. La seconda selezione avviene sui <strong>metadati assegnati al testo</strong>. Qualora il termine rientri in entrambe le opzioni acquista maggiore peso e il contenuto appare in testa ai risultati di ricerca.</p>
+<p>I risultati di ricerca devono presentarsi organizzati in base a criteri stabiliti a priori.</p>
+<!-- TODO: <div class="lg-callout lg-callout-should">
+<mark>SI DOVREBBE</mark> -->
+<p>Le differenti informazioni prodotte dalla ricerca potrebbero essere organizzate per tipologie di contenuto, ad esempio es. documenti, notizie, pagine, format. Il parametro successivo dovrebbe essere quindi riferito al contenuto con data di modifica più recente.
+<!-- </div> --></p>
 
   </article>
 
