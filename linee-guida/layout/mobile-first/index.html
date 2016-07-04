@@ -15,7 +15,7 @@
     </script><![endif]-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Contenuti testuali | Linee guida di design per i siti web della PA</title>
+    <title>Mobile first | Linee guida di design per i siti web della PA</title>
     <meta name="description" content="Progettare il design dei siti web della Pubblica Amministrazione (versione alfa)">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -139,14 +139,11 @@
         </li>
       </ul>
     </li>
-    <li><a href="/linee-guida/riferimenti-normativi">Riferimenti normativi</a></li>
+    <!-- TODO <li><a href="/linee-guida/riferimenti-normativi">Riferimenti normativi</a></li> -->
     <li><a href="/linee-guida/usabilita">Usabilità</a>
       <ul>
         <li>
           <a href="/linee-guida/usabilita/principi">Principi</a>
-        </li>
-        <li>
-          <a href="/linee-guida/usabilita/contenuti">Contenuti</a>
         </li>
         <li>
           <a href="/linee-guida/usabilita/gruppo-di-lavoro">Misurazione</a>
@@ -164,15 +161,14 @@
     </li>
     <li><a href="/linee-guida/contenuti">Gestione contenuti</a></li>
     <li><a href="/linee-guida/infoarchitettura">Architettura dell'informazione</a></li>
-    <li><a href="/linee-guida/mobile-first">Mobile first</a></li>
     <li><a href="/linee-guida/header">Header</a></li>
     <li><a href="/linee-guida/footer">Footer</a></li>
-    <li><a href="/linee-guida/griglie">Griglie</a></li>
     <li><a href="/linee-guida/layout">Layout</a>
       <ul>
+        <li><a href="/linee-guida/layout/mobile-first">Mobile first</a></li>
+        <li><a href="/linee-guida/layout/griglie">Griglie</a></li>
         <li><a href="/linee-guida/layout/homepage">Home page</a></li>
         <li><a href="/linee-guida/layout/carousel">Carousel</a></li>
-        <li><a href="/linee-guida/layout/griglie">Griglie</a></li>
       </ul>
     </li>
     <li><a href="/linee-guida/tipografia">Tipografia</a></li>
@@ -203,36 +199,37 @@
   </div><!--/.sidebar-offcanvas-->
 
   <article class="col-sm-12 col-md-8" id="main" tabindex="0">
-    <h2>Contenuti testuali</h2>
-    <p>La scrittura dei contenuti è parte integrante del processo di design e costituisce un elemento importante per il raggiungimento della piena usabilità del sito web.</p>
-<h3 id="la-scrittura-del-testo">La scrittura del testo</h3>
+    <h2>Mobile first</h2>
+    <h3 id="responsive-web-design">Responsive Web Design</h3>
+<div class="lg-callout lg-callout-must">
+<mark>SI DEVE</mark> Il sito web deve essere progettato e sviluppato con un approccio responsive con l’obiettivo di rendere disponibile un’ottimale esperienza di visione all’utente,
+facilità di lettura e navigazione con minime necessità di ridimensionare, spostare o scorrere, su qualunque dispositivo indipendentemente dalla risoluzione e dalla dimensione dello schermo.
+</div>
+
+<p>L&#39;approccio mobile first consiste nel valutare in prima istanza la resa sui dispositivi mobile, per poi arricchire di elementi e funzionalità la composizione della pagina mano a mano che la viewport aumenta.</p>
 <div class="lg-callout lg-callout-should">
 <mark>SI DOVREBBE</mark>
-Si dovrebbe evitare l’utilizzo di un linguaggio gergale e specialistico o l’uso di termini e frasi di difficile comprensione.
+Si consiglia lo stesso approccio anche nello sviluppo di qualsiasi sito web. Obbligarsi
+a progettare un’applicazione con ridotte disponibilità di spazio, di interazione, di velocità di caricamento,
+ obbliga a stabilire delle priorità e a fare delle scelte che risulteranno utili anche all’usabilità del prodotto
+in generale. Nell’approccio mobile first si parte dall’essenziale. Presentare un contenuto su uno
+schermo piuttosto piccolo o con una linea che non ha elevata velocità di caricamento dati ci obbliga
+a dare priorità, a fare chiarezza, a togliere il superfluo. Man mano che lo schermo si fa più grande
+e il collegamento più veloce, i contenuti vengono arricchiti. Un utente seduto alla scrivania
+con un computer ha probabilmente più tempo e più possibilità di approfondire e navigare.
+Un utente collegato da smartphone ha forse l’urgenza di cercare quel contenuto dal luogo in cui si trova,
+senza aspettare di tornare a casa e arrivando all’essenziale il più velocemente possibile.
 </div>
 
-<p>Il web richiede l’uso di uno stile più informale e semplice. La prima regola di un buon testo
-è dunque quella di essere chiari, diretti e sintetici. Sarebbe preferibile utilizzare per i testi descrittivi
-solo i termini compresi nel Vocabolario di base della lingua italiana (Tullio De Mauro,
-Guida all’uso delle parole, Paravia, 1980) per garantire la comprensione al più vasto pubblico possibile.
-Dove è necessario utilizzare una terminologia specifica, o tecnica, vanno predisposti i necessari
-strumenti di aiuto (tooltip, glossario, ecc.). Sciogliete sempre le abbreviazioni e le sigle.</p>
-<h3 id="link">Link</h3>
-<p>Si dovrebbero evitare “pop-up” o aperture di pagina esterne. Nel caso di inserimento di link esterni questi dovrebbero essere accompagnati da un avviso leggibile anche dagli screen reader (ad esempio &quot;Questo link si aprirà in una nuova finestra&quot;).</p>
-<div class="lg-callout lg-callout-must">
-<mark>SI DEVE</mark>
-I link devono essere costituiti da parole-chiave significative. Non usare mai la formula &quot;clicca qui&quot; per attivare un link.
-</div>
-
-<h3 id="corretta-ortografia">Corretta ortografia</h3>
-<p>Si raccomanda una particolare attenzione alla corretta ortografia della lingua italiana, soprattutto per quanto riguarda l’uso degli accenti e degli apostrofi. Pertanto si dovranno utilizzare le corrette entità HTML, scrivendo È (È) e non E’. Analogamente si dovranno utilizzare le virgolette alte doppie “ ” (&ldquote; &rdquote;) o le virgolette alte semplici ‘ ’ (&lsquote; &rsquote;) al posto delle virgolette indifferenziate dritte.</p>
-<h3 id="l-interfaccia">L’interfaccia</h3>
-<p>Nel definire le voci del menu, della navigazione e dei comandi si deve usare una terminologia univoca, dove la stessa definizione non conduca, in luoghi diversi, ad azioni differenti. Nei bottoni e nelle etichette descrivere in modo coerente e puntuale quali sono le azioni che ci dobbiamo aspettare nell’eseguire un comando o nel riempire un form. Siate specifici: “Cerca” invece di “Invia”, “Paga” invece di “Ok”.Il significato di “Cancella” è diverso da “Annulla”. Siate espliciti: “Pubblica Amministrazione” invece di “PA”.</p>
-<h3 id="rendere-chiara-la-gerarchia">Rendere chiara la gerarchia</h3>
-<div class="lg-callout lg-callout-must">
-<mark>SI DEVE</mark>
-Per una corretta definizione della struttura gerarchica dei contenuti, la suddivisione in parti deve essere espressa attraverso l’uso dei tag semantici disponibili in HTML5, quali <code>&lt;article&gt;, &lt;aside&gt;, &lt;figcaption&gt;, &lt;header&gt;, &lt;footer&gt;</code>, ecc., al posto del generico divisore <code>&lt;div&gt;</code>.
-</div>
+<p>Nel web design si sono adottati spesso gli approcci “graceful degradation” (decadimento parziale) o &quot;progressive enhancement&quot;
+ (miglioramento progressivo). Si tratta di due risposte diverse alla stessa esigenza: rendere il contenuto accessibile su dispositivi diversi. Nel primo approccio ci si fa carico di verificare che il progetto, inizialmente pensato per i dispositivi più completi, resti navigabile anche man mano che si usano tecnologie più obsolete o meno interattive. Nel secondo, si parte da un nucleo solido e irrinunciabile di contenuti che vengono arricchiti man mano che il dispositivo diventa più potente e all’avanguardia.</p>
+<p>Tecnicamente il sito web deve rilevare quale dispositivo lo sta navigando. È possibile capire:</p>
+<ul>
+<li>lo user agent, ovvero quale browser e quale sistema operativo è in collegamento</li>
+<li>la risoluzione dello schermo, ovvero quanti pixel abbiamo a disposizione</li>
+<li>che tipo di device, ovvero se stiamo andando in stampa o su schermo</li>
+</ul>
+<p>Tecniche apposite come l’uso di media queries permettono di dare istruzioni ai CSS per comportarsi in modo diverso a seconda della risoluzione (breakpoints). Individuato il dispositivo, la risoluzione e il browser utilizzato, il contenuto (il nucleo) viene arricchito o meno da informazioni e funzioni aggiuntive.</p>
 
   </article>
 

@@ -139,14 +139,11 @@
         </li>
       </ul>
     </li>
-    <li><a href="/linee-guida/riferimenti-normativi">Riferimenti normativi</a></li>
+    <!-- TODO <li><a href="/linee-guida/riferimenti-normativi">Riferimenti normativi</a></li> -->
     <li><a href="/linee-guida/usabilita">Usabilità</a>
       <ul>
         <li>
           <a href="/linee-guida/usabilita/principi">Principi</a>
-        </li>
-        <li>
-          <a href="/linee-guida/usabilita/contenuti">Contenuti</a>
         </li>
         <li>
           <a href="/linee-guida/usabilita/gruppo-di-lavoro">Misurazione</a>
@@ -164,15 +161,14 @@
     </li>
     <li><a href="/linee-guida/contenuti">Gestione contenuti</a></li>
     <li><a href="/linee-guida/infoarchitettura">Architettura dell'informazione</a></li>
-    <li><a href="/linee-guida/mobile-first">Mobile first</a></li>
     <li><a href="/linee-guida/header">Header</a></li>
     <li><a href="/linee-guida/footer">Footer</a></li>
-    <li><a href="/linee-guida/griglie">Griglie</a></li>
     <li><a href="/linee-guida/layout">Layout</a>
       <ul>
+        <li><a href="/linee-guida/layout/mobile-first">Mobile first</a></li>
+        <li><a href="/linee-guida/layout/griglie">Griglie</a></li>
         <li><a href="/linee-guida/layout/homepage">Home page</a></li>
         <li><a href="/linee-guida/layout/carousel">Carousel</a></li>
-        <li><a href="/linee-guida/layout/griglie">Griglie</a></li>
       </ul>
     </li>
     <li><a href="/linee-guida/tipografia">Tipografia</a></li>
@@ -234,13 +230,20 @@ Strutturare il contenuto in modo che le informazioni più importanti compaiano n
 <p>Ciò consente inoltre di evidenziare maggiormente i contenuti nei risultati dei motori di ricerca.</p>
 <h3 id="linguaggio">Linguaggio</h3>
 <p>È necessario usare un linguaggio chiaro, finalizzato a indirizzare l&#39;utente verso l&#39;informazione o il servizio di cui ha bisogno.</p>
-<p>Si dovrebbe utilizzare:</p>
+<div class="lg-callout lg-callout-should">
+<mark>SI DOVREBBE</mark>
+Si dovrebbe evitare l’utilizzo di un linguaggio gergale e specialistico o l’uso di termini e frasi di difficile comprensione.
+</div>
+
+<p>Utilizzare quindi:</p>
 <ul>
 <li>Preferibilmente la forma attiva dei verbi, e non quella impersonale</li>
 <li>Un vocabolario semplice e chiaro, privilegiando termini e frasi che gli utenti potrebbero usare nello svolgere una ricerca online</li>
 <li>Una spiegazione dei termini tecnici presenti, in particolare la prima volta che compaiono nel sito</li>
 <li>L&#39;esplicitazione per intero degli acronimi e delle abbreviazioni, inserendo l&#39;acronimo tra parentesi tonde dopo il termine indicato per esteso</li>
 </ul>
+<h4 id="corretta-ortografia">Corretta ortografia</h4>
+<p>Si raccomanda una particolare attenzione alla corretta ortografia della lingua italiana, soprattutto per quanto riguarda l’uso degli accenti e degli apostrofi. Pertanto si dovranno utilizzare le corrette entità HTML, scrivendo È (È) e non E’. Analogamente si dovranno utilizzare le virgolette alte doppie “ ” (&ldquote; &rdquote;) o le virgolette alte semplici ‘ ’ (&lsquote; &rsquote;) al posto delle virgolette indifferenziate dritte.</p>
 <h3 id="organizzare-la-sezione-notizie">Organizzare la sezione notizie</h3>
 <p>Nella disposizione e organizzazione delle notizie in home page, è sconsigliabile l&#39;utilizzo dello slider (o carousel) per la pubblicazione dei contenuti.</p>
 <p>Spesso infatti lo slider viene ignorato e gli utenti non riescono ad avere accesso immediato alle notizie più importanti.
@@ -298,9 +301,15 @@ Il sommario delle notizie in home page dovrebbe essere un periodo di senso compi
 <p>È auspicabile che nei link siano presenti parole salienti rispetto al contenuto al quale rimandano.
 I link devono essere inseriti solo nel corpo del testo, e non devono esseere presenti nel sommario.
 È buona norma verificare periodicamente i link esterni, per evitare che rimandino a pagine inesistenti.</p>
+<div class="lg-callout lg-callout-must">
+<mark>SI DEVE</mark>
+I link devono essere costituiti da parole-chiave significative. Non usare mai la formula &quot;clicca qui&quot; per attivare un link.
+</div>
+
+<p>Nel definire le voci del menu, della navigazione e dei comandi si deve usare una terminologia univoca, dove la stessa definizione non conduca, in luoghi diversi, ad azioni differenti. Nei bottoni e nei link descrivere in modo coerente e puntuale quali sono le azioni che ci dobbiamo aspettare nell’eseguire un comando o nel riempire un form. Siate specifici: “Cerca” invece di “Invia”, “Paga” invece di “Ok”.Il significato di “Cancella” è diverso da “Annulla”.</p>
 <p>Anziché duplicare informazioni all&#39;interno di sezioni diverse del sito, è preferibile attivare dei
 link di approfondimento per collegare fra loro contenuti che trattano tematiche complementari.</p>
-<!-- TODO: Quando il link rimanda ad una pagina esterna, bisogna informare l’utente che sta per essere diretto alla pagina di un altro sito ... -->
+<p>Si dovrebbero evitare &quot;pop-up&quot; o aperture di pagina esterne. Nel caso di inserimento di link esterni questi dovrebbero essere accompagnati da un avviso leggibile anche dagli screen reader (ad esempio &quot;Questo link si aprirà in una nuova finestra&quot;).</p>
 <h3 id="gestione-delle-immagini">Gestione delle immagini</h3>
 <p>È auspicabile associare immagini al testo solo qualora queste aggiungano informazioni al contenuto e non abbiano un fine puramente decorativo.
 Le immagini puramente decorative appesantiscono il download della pagina e la scansione delle informazioni da parte dell&#39;utente.</p>
