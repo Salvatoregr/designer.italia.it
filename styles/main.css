@@ -6630,8 +6630,7 @@ ul.navmenu {
 .footer__logo, .navbar, .navbar h1, .nav-banner, .nav-banner img, .nav-banner p {
   -webkit-transition: all .25s ease-out;
           transition: all .25s ease-out;
-  -webkit-transform: translate3d(0, 0, 0);
-          transform: translate3d(0, 0, 0); }
+  will-change: transform; }
 
 /*
  *  Offcanvas layout
