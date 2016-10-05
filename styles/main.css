@@ -7051,7 +7051,7 @@ article h3,
 article h4,
 article h5,
 article h6 {
-  max-width: 31em; }
+  max-width: 32em; }
 
 abbr {
   border-bottom: none !important; }
@@ -7334,7 +7334,7 @@ article table {
   text-transform: lowercase; }
 
 .lg-example-colore-blu-italia div {
-  max-width: 31em; }
+  max-width: 32em; }
   .lg-example-colore-blu-italia div .h3, .lg-example-colore-blu-italia div .h4 {
     margin: auto;
     max-width: 80%;
