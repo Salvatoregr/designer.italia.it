@@ -15,7 +15,7 @@
     </script><![endif]-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Principi | Linee guida di design per i siti web della PA</title>
+    <title>Indicazioni generali | Linee guida di design per i siti web della PA</title>
     <meta name="description" content="Progettare il design dei siti web della Pubblica Amministrazione (versione alfa)">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -27,7 +27,7 @@
      -->
     <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300italic,300,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css' />
 
-    <link rel="stylesheet" href="/styles/combined-3e2c8ba3a7.css">
+    <link rel="stylesheet" href="/styles/combined-f5a45cd595.css">
 
     <!--[if lt IE 9]>
     <script src="/scripts/combined-94bd8f59ad.i8.js"></script>
@@ -43,8 +43,8 @@
 
     <div class="skiplink sr-only">
       <ul>
-        <li><a accesskey="2" href="/linee-guida/usabilita/principi/#main">Vai al Contenuto</a></li>
-        <li><a accesskey="3" href="/linee-guida/usabilita/principi/#menu">Vai alla navigazione del sito (sommario delle linee guida)</a></li>
+        <li><a accesskey="2" href="/linee-guida/il-progetto/indicazioni-generali/#main">Vai al Contenuto</a></li>
+        <li><a accesskey="3" href="/linee-guida/il-progetto/indicazioni-generali/#menu">Vai alla navigazione del sito (sommario delle linee guida)</a></li>
         <li><a href="https://github.com/italia-it/designer.italia.it">Vai al repository GitHub delle Linee Guida</a></li>
 <!--        <li><a href="#footer">Vai al Footer</a></li>-->
       </ul>
@@ -130,12 +130,15 @@
     <li><a href="/">Home</a></li>
     <li>
       <a href="/linee-guida/il-progetto">Il progetto</a>
+      <ul>
+        <li><a href="/linee-guida/il-progetto/strategie">Strategie</a></li>
+      </ul>
     </li>
     <!-- TODO <li><a href="/linee-guida/riferimenti-normativi">Riferimenti normativi</a></li> -->
     <li><a href="/linee-guida/usabilita">Usabilità</a>
       <ul>
         <li>
-          <a href="/linee-guida/usabilita/principi">Principi</a>
+          <a href="/linee-guida/usabilita/criteri">Criteri di valutazione</a>
         </li>
         <li>
           <a href="/linee-guida/usabilita/misurazione">Misurazione</a>
@@ -153,22 +156,28 @@
     </li>
     <li><a href="/linee-guida/contenuti">Gestione contenuti</a></li>
     <li><a href="/linee-guida/infoarchitettura">Architettura dell'informazione</a></li>
-    <li><a href="/linee-guida/dispositivi">Dispositivi</a>
-    <li><a href="/linee-guida/header">Header</a></li>
-    <li><a href="/linee-guida/footer">Footer</a></li>
-    <li><a href="/linee-guida/layout">Layout</a>
-      <ul>
+
+    <li><a href="#visual-design" aria-label="Espandi / contrai il menu" aria-controls="visual-design">Visual design</a>
+      <ul id="visual-design">
         <li><a href="/linee-guida/layout/mobile-first">Mobile first</a></li>
+        <li><a href="/linee-guida/layout">Layout</a>
         <li><a href="/linee-guida/layout/griglie">Griglie</a></li>
-        <li><a href="/linee-guida/layout/homepage">Home page</a></li>
-        <li><a href="/linee-guida/layout/carousel">Carousel</a></li>
+        <li><a href="/linee-guida/tipografia">Tipografia</a></li>
+        <li><a href="/linee-guida/colori">Colori</a>
+          <ul>
+            <li><a href="/linee-guida/colori/palette-pac">Palette amministrazioni centrali</a></li>
+          </ul>
+        </li>
+        <li><a href="/linee-guida/bottoni">Bottoni</a></li>
+        <li><a href="/linee-guida/form">Form</a></li>
+        <li><a href="/linee-guida/iconografia">Iconografia</a></li>
+        <li><a href="/linee-guida/layout/homepage">Impostazione della home page</a></li>
+        <li><a href="/linee-guida/layout/carousel">Utilizzo di carousel</a></li>
+        <li><a href="/linee-guida/header">Header</a></li>
+        <li><a href="/linee-guida/footer">Footer</a></li>
       </ul>
     </li>
-    <li><a href="/linee-guida/tipografia">Tipografia</a></li>
-    <li><a href="/linee-guida/colori">Colori</a></li>
-    <li><a href="/linee-guida/bottoni">Bottoni</a>
-    <li><a href="/linee-guida/form">Form</a>
-    <li><a href="/linee-guida/iconografia">Iconografia</a></li>
+
     <li>
       <a href="/linee-guida/componenti">Componenti</a>
       <ul>
@@ -184,6 +193,8 @@
         </li>
       </ul>
     </li>
+    <li><a href="/linee-guida/dispositivi">Compatibilità con i dispositivi</a>
+    <li><a href="/linee-guida/il-progetto/indicazioni-generali">Indicazioni generali</a></li>
     <li><a href="/linee-guida/glossario">Glossario</a></li>
   </ul>
 
@@ -192,42 +203,34 @@
   </div><!--/.sidebar-offcanvas-->
 
   <article class="col-sm-12 col-md-8" id="main" tabindex="0">
-    <h2>Principi</h2>
-    <h3 id="principi-di-valutazione">Principi di valutazione</h3>
-<p>Per garantire la fruibilità delle informazioni e contribuire a migliorare l&#39;usabilità dei siti e delle applicazioni, le pubbliche amministrazioni sono tenute a rispettare i criteri qui elencati.</p>
-<h4 id="percezione">Percezione</h4>
-<p>Le informazioni e i comandi necessari per l’esecuzione delle attività devono essere sempre disponibili e percettibili.</p>
-<h4 id="comprensibilit-">Comprensibilità</h4>
-<p>Le informazioni e i comandi necessari per l’esecuzione delle attività devono essere facili da capire e da usare. </p>
-<h4 id="operabilit-">Operabilità</h4>
-<p>Le informazioni e i comandi devono consentire una scelta immediata delle azioni necessarie al raggiungimento dell’obiettivo. </p>
-<h4 id="coerenza">Coerenza</h4>
-<p>I simboli, i messaggi e le azioni devono avere lo stesso significato in tutto il sito. </p>
-<h4 id="tutela-della-salute">Tutela della salute</h4>
-<p>Il sito deve possedere caratteristiche idonee a salvaguardare il benessere psicofisico dell’utente. </p>
-<h4 id="sicurezza">Sicurezza</h4>
-<p>Il sito deve possedere caratteristiche idonee a fornire transazioni e dati affidabili, gestiti con adeguati livelli di sicurezza. </p>
-<h4 id="trasparenza">Trasparenza</h4>
-<p>Il sito deve comunicare all’utente lo stato, gli effetti delle azioni compiute e le informazioni necessarie per la corretta valutazione delle modifiche effettuate sul sito stesso. </p>
-<h4 id="facilit-di-apprendimento">Facilità di apprendimento</h4>
-<p>Il sito deve possedere caratteristiche di utilizzo di facile e rapido apprendimento.</p>
-<h4 id="aiuto-e-documentazione">Aiuto e documentazione</h4>
-<p>Le funzionalità di aiuto, quali le guide in linea e la documentazione sul funzionamento del sito devono essere di facile reperimento e collegate alle azioni svolte dall’utente. </p>
-<h4 id="tolleranza-agli-errori">Tolleranza agli errori</h4>
-<p>Il sito deve essere configurato in modo da prevenire gli errori; ove questi, comunque, si manifestino, occorre segnalarli chiaramente e indicare le azioni necessarie per porvi rimedio. </p>
-<h4 id="gradevolezza">Gradevolezza</h4>
-<p>Il sito deve possedere caratteristiche idonee a favorire e a mantenere l’interesse dell’utente. </p>
-<h4 id="flessibilit-">Flessibilità</h4>
-<p>Il sito deve tener conto delle preferenze individuali e dei contesti.</p>
-<h4 id="per-approfondimenti">Per approfondimenti</h4>
-<p><a href="http://www.agid.gov.it/dm-8-luglio-2005-allegato-b">Allegato B del Decreto Ministeriale 8 luglio 2005</a>.</p>
+    <h2>Indicazioni generali</h2>
+    <p>Le indicazioni presenti in queste linee guida sono così classificate:</p>
+<div class="lg-callout lg-callout-must">
+<mark>SI DEVE</mark>
+Requisiti obbligatori.
+</div>
+
+<div class="lg-callout lg-callout-should">
+<mark>SI DOVREBBE</mark>
+Suggerimenti caldamente consigliati.
+</div>
+
+<div class="lg-callout lg-callout-could">
+<mark>SI PUÒ</mark>
+Tutto quello che è possibile.
+</div>
+
+<div class="lg-callout lg-callout-example">
+<mark>ESEMPIO</mark>
+Buone pratiche e materiali a disposizione.
+</div>
 
   </article>
 
 </div>
 
 
-  <a href="#page_top" title="torna all'inizio del contenuto" class="sr-only">torna all'inizio del contenuto</a>
+  <a href="#page_top" class="sr-only">torna all’inizio del contenuto</a>
 
 </div><!-- container -->
 
@@ -259,23 +262,23 @@
     </div>
     <div class="row">
       <ul class="col-xs-12 footer__links clearfix">
-        <li><a href="/linee-guida/privacy-policy/" title="privacy policy">Privacy</a></li>
-        <li><a href="/linee-guida/note-legali/" title="note legali">Note legali</a></li>
-        <li><a href="/linee-guida/credits/" title="credits">Credits</a></li>
-        <li><a href="/linee-guida/showcase/" title="credits">Showcase</a></li>
-        <li><a href="/linee-guida/contatti/" title="credits">Contatti</a></li>
+        <li><a href="/linee-guida/privacy-policy/">Privacy</a></li>
+        <li><a href="/linee-guida/note-legali/">Note legali</a></li>
+        <li><a href="/linee-guida/credits/">Credits</a></li>
+        <li><a href="/linee-guida/showcase/">Showcase</a></li>
+        <li><a href="/linee-guida/contatti/">Contatti</a></li>
       </ul>
     </div>
   </div>
 </footer>
 
-<a href="#page_top" title="torna all'inizio del contenuto" class="scrollto_top"><span><span class="sr-only">torna all'inizio del contenuto</span></span></a>
+<a href="#page_top" class="scrollto_top"><span><span class="sr-only">torna all'inizio del contenuto</span></span></a>
 
 <p class="cookie-message sr-only" role="alert">
   Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.
 </p>
 
-<script src="/scripts/combined-ec8acb4123.js"></script>
+<script src="/scripts/combined-7c8e5787d0.js"></script>
 
 <script>
 (function (b, o, i, l, e, r) {
@@ -287,6 +290,7 @@
   b[l].l = +new Date;
   e = o.createElement(i);
   r = o.getElementsByTagName(i)[0];
+  e.async = 1;
   e.src = '//www.google-analytics.com/analytics.js';
   r.parentNode.insertBefore(e, r)
 }(window, document, 'script', 'ga'));

@@ -27,7 +27,7 @@
      -->
     <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300italic,300,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css' />
 
-    <link rel="stylesheet" href="/styles/combined-3e2c8ba3a7.css">
+    <link rel="stylesheet" href="/styles/combined-f5a45cd595.css">
 
     <!--[if lt IE 9]>
     <script src="/scripts/combined-94bd8f59ad.i8.js"></script>
@@ -130,12 +130,15 @@
     <li><a href="/">Home</a></li>
     <li>
       <a href="/linee-guida/il-progetto">Il progetto</a>
+      <ul>
+        <li><a href="/linee-guida/il-progetto/strategie">Strategie</a></li>
+      </ul>
     </li>
     <!-- TODO <li><a href="/linee-guida/riferimenti-normativi">Riferimenti normativi</a></li> -->
     <li><a href="/linee-guida/usabilita">Usabilità</a>
       <ul>
         <li>
-          <a href="/linee-guida/usabilita/principi">Principi</a>
+          <a href="/linee-guida/usabilita/criteri">Criteri di valutazione</a>
         </li>
         <li>
           <a href="/linee-guida/usabilita/misurazione">Misurazione</a>
@@ -153,22 +156,28 @@
     </li>
     <li><a href="/linee-guida/contenuti">Gestione contenuti</a></li>
     <li><a href="/linee-guida/infoarchitettura">Architettura dell'informazione</a></li>
-    <li><a href="/linee-guida/dispositivi">Dispositivi</a>
-    <li><a href="/linee-guida/header">Header</a></li>
-    <li><a href="/linee-guida/footer">Footer</a></li>
-    <li><a href="/linee-guida/layout">Layout</a>
-      <ul>
+
+    <li><a href="#visual-design" aria-label="Espandi / contrai il menu" aria-controls="visual-design">Visual design</a>
+      <ul id="visual-design">
         <li><a href="/linee-guida/layout/mobile-first">Mobile first</a></li>
+        <li><a href="/linee-guida/layout">Layout</a>
         <li><a href="/linee-guida/layout/griglie">Griglie</a></li>
-        <li><a href="/linee-guida/layout/homepage">Home page</a></li>
-        <li><a href="/linee-guida/layout/carousel">Carousel</a></li>
+        <li><a href="/linee-guida/tipografia">Tipografia</a></li>
+        <li><a href="/linee-guida/colori">Colori</a>
+          <ul>
+            <li><a href="/linee-guida/colori/palette-pac">Palette amministrazioni centrali</a></li>
+          </ul>
+        </li>
+        <li><a href="/linee-guida/bottoni">Bottoni</a></li>
+        <li><a href="/linee-guida/form">Form</a></li>
+        <li><a href="/linee-guida/iconografia">Iconografia</a></li>
+        <li><a href="/linee-guida/layout/homepage">Impostazione della home page</a></li>
+        <li><a href="/linee-guida/layout/carousel">Utilizzo di carousel</a></li>
+        <li><a href="/linee-guida/header">Header</a></li>
+        <li><a href="/linee-guida/footer">Footer</a></li>
       </ul>
     </li>
-    <li><a href="/linee-guida/tipografia">Tipografia</a></li>
-    <li><a href="/linee-guida/colori">Colori</a></li>
-    <li><a href="/linee-guida/bottoni">Bottoni</a>
-    <li><a href="/linee-guida/form">Form</a>
-    <li><a href="/linee-guida/iconografia">Iconografia</a></li>
+
     <li>
       <a href="/linee-guida/componenti">Componenti</a>
       <ul>
@@ -184,6 +193,8 @@
         </li>
       </ul>
     </li>
+    <li><a href="/linee-guida/dispositivi">Compatibilità con i dispositivi</a>
+    <li><a href="/linee-guida/il-progetto/indicazioni-generali">Indicazioni generali</a></li>
     <li><a href="/linee-guida/glossario">Glossario</a></li>
   </ul>
 
@@ -193,51 +204,40 @@
 
   <article class="col-sm-12 col-md-8" id="main" tabindex="0">
     <h2>Il progetto</h2>
-    <p>Progettare e sviluppare correttamente un sito web significa semplificare l&#39;accesso alle informazioni, ai servizi e alle procedure.
-Queste sono spesso le attività più sottovalutate nel processo di produzione.
-È utile richiamare pertanto i principi ispiratori nella progettazione di un sito web della Pubblica Amministrazione.</p>
-<h4 id="prima-il-cittadino">Prima il cittadino</h4>
-<p>Il cittadino è il soggetto principale cui è rivolto il sito web.
-Le scelte progettuali devono garantire le migliori condizioni di utilizzo e il più ampio accesso possibile ai servizi, indipendentemente dalla cultura, dall’età e dalle competenze informatiche degli utilizzatori.</p>
-<h4 id="essere-chiari">Essere chiari</h4>
-<p>Scrivere in modo chiaro, semplice e sintetico aiuta a chiarire le idee. È necessario uno sforzo per superare il linguaggio
-burocratico e specialistico che spesso caratterizza la Pubblica Amministrazione. Essere chiari permette di non escludere quei cittadini che per età, cultura o capacità, non hanno dimestichezza con il linguaggio della pubblica amministrazione.</p>
-<h4 id="facilitare">Facilitare</h4>
-<p>Semplificare non è semplice. La facilitazione delle procedure è un passaggio essenziale per il
-successo dei siti e dei servizi digitali. Ridurre al minimo i passaggi, predisporre strumenti intuitivi, permettere il recupero degli errori, gratificare l’utente costituiscono gli obiettivi essenziali che la pubblica amministrazione deve compiere per il successo del sito e del servizio on line. Il processo che viene definito come Design Thinking costituisce un valido strumento per costruire percorsi facilitati.</p>
-<h4 id="essere-inclusivi">Essere inclusivi</h4>
-<p>La costruzione di ogni componente del progetto di un sito  deve essere improntata alla massima inclusività.
-I principi di usabilità, accessibilità e leggibilità devono caratterizzare l’intero sistema.</p>
-<h4 id="disegno-coerente-non-uniforme">Disegno coerente, non uniforme</h4>
-<p>Le linee guida intendono predisporre un sistema condiviso di riferimenti visivi, in una costruzione dinamica in continuo aggiornamento.</p>
-<h4 id="indicazioni-generali">Indicazioni generali</h4>
-<p>Le indicazioni presenti in queste linee guida sono così classificate:</p>
-<div class="lg-callout lg-callout-must">
-<mark>SI DEVE</mark>
-Requisiti obbligatori.
-</div>
-
-<div class="lg-callout lg-callout-should">
-<mark>SI DOVREBBE</mark>
-Suggerimenti caldamente consigliati.
-</div>
-
-<div class="lg-callout lg-callout-could">
-<mark>SI PUÒ</mark>
-Tutto quello che è possibile.
-</div>
-
-<div class="lg-callout lg-callout-example">
-<mark>ESEMPIO</mark>
-Buone pratiche e materiali a disposizione.
-</div>
+    <p>Entro il 2020 le amministrazioni e le istituzioni pubbliche nell’Unione europea dovranno essere efficienti, inclusive e fornire servizi pubblici digitali end-to-end, personalizzati e intuitivi per tutti i cittadini e le imprese nell’UE.</p>
+<p>Il ricorso ad approcci progettuali innovativi permette di erogare servizi migliori, in linea con le esigenze e le necessità di cittadini e imprese.
+Le pubbliche amministrazioni sfruttano le opportunità offerte dal nuovo ambiente digitale per interagire più facilmente tra loro e
+con gli attori coinvolti nel processo.</p>
+<p><a href="http://eur-lex.europa.eu/legal-content/IT/TXT/HTML/?uri=CELEX:52016DC0179&amp;from=IT">Piano d’azione dell’UE per l’eGovernment 2016-2020</a></p>
+<h2 id="principi">Principi</h2>
+<h3 id="-span-id-prima-i-cittadini-prima-i-cittadini-tutti-span-"><span id="prima-i-cittadini">Prima i cittadini, tutti</span></h3>
+<p><img src="images/playbook/icoPS001.svg" alt="" class="ico-playbookservizi"></p>
+<p>Tutti i cittadini hanno pari dignità sociale e devono poter accedere ai servizi senza distinzione di sesso, di lingua, di età, di condizioni personali e sociali. È compito della Pubblica Amministrazione rimuovere gli ostacoli di ordine tecnologico, geografico,
+sociale e culturale che, limitando di fatto la libertà e l’eguaglianza dei cittadini, impediscono il pieno utilizzo dei servizi e l’effettiva partecipazione alla vita civica e democratica del Paese.</p>
+<h3 id="-span-id-innovativi-per-tradizione-innovativi-per-tradizione-span-"><span id="innovativi-per-tradizione">Innovativi per tradizione</span></h3>
+<p><img src="images/playbook/icoPS002.svg" alt="" class="ico-playbookservizi"></p>
+<p>Portare i tratti caratteristici dello stile italiano (progettualità, creatività, estetica) nella pubblica amministrazione. Solo attraverso un’esperienza di utilizzo dei servizi piacevole e appagante, dove il design non è considerato un tema superfluo,
+è possibile avere le condizioni per una migliore trasparenza e chiarezza.</p>
+<h3 id="-span-id-dialogare-per-migliorare-dialogare-per-migliorare-span-"><span id="dialogare-per-migliorare">Dialogare per migliorare</span></h3>
+<p><img src="images/playbook/icoPS003.svg" alt="" class="ico-playbookservizi"></p>
+<p>Fornire sempre canali di dialogo con il cittadino attraverso gli strumenti più idonei, che producano risposte puntuali e pronta assistenza. Costruire un rapporto di fiducia che favorisca successive interazioni e un ritorno di informazioni utile a valutare
+i servizi.</p>
+<h3 id="-span-id-utile-e-affidabile-utile-per-design-affidabile-per-principio-span-"><span id="utile-e-affidabile">Utile per design, affidabile per principio</span></h3>
+<p><img src="images/playbook/icoPS004.svg" alt="" class="ico-playbookservizi"></p>
+<p>Il servizio offre al cittadino il soddisfacimento di un’esigenza reale, che migliora la sua vita e il rapporto con l’ente; evita interazioni non necessarie e ripetitive, conservando e raccogliendo le informazioni fornite in modo sicuro e trasparente.</p>
+<p>Si devono creare servizi così semplici e intuitivi che i cittadini li preferiscono a quelli tradizionali.</p>
+<h3 id="-span-id-a-servizio-paese-a-servizio-del-paese-span-"><span id="a-servizio-paese">A servizio del Paese</span></h3>
+<p><img src="images/playbook/icoPS005.svg" alt="" class="ico-playbookservizi"></p>
+<p>Ogni servizio è facile da usare, in ogni passaggio è chiaro cosa è stato fatto e cosa è possibile fare, i messaggi sono scritti in linguaggio comprensibile.</p>
+<p>Il servizio è realizzato e diffuso attraverso gli strumenti e i canali effettivamente utilizzati
+dai cittadini utilizzando standard, linee guida e infrastrutture condivise.</p>
 
   </article>
 
 </div>
 
 
-  <a href="#page_top" title="torna all'inizio del contenuto" class="sr-only">torna all'inizio del contenuto</a>
+  <a href="#page_top" class="sr-only">torna all’inizio del contenuto</a>
 
 </div><!-- container -->
 
@@ -269,23 +269,23 @@ Buone pratiche e materiali a disposizione.
     </div>
     <div class="row">
       <ul class="col-xs-12 footer__links clearfix">
-        <li><a href="/linee-guida/privacy-policy/" title="privacy policy">Privacy</a></li>
-        <li><a href="/linee-guida/note-legali/" title="note legali">Note legali</a></li>
-        <li><a href="/linee-guida/credits/" title="credits">Credits</a></li>
-        <li><a href="/linee-guida/showcase/" title="credits">Showcase</a></li>
-        <li><a href="/linee-guida/contatti/" title="credits">Contatti</a></li>
+        <li><a href="/linee-guida/privacy-policy/">Privacy</a></li>
+        <li><a href="/linee-guida/note-legali/">Note legali</a></li>
+        <li><a href="/linee-guida/credits/">Credits</a></li>
+        <li><a href="/linee-guida/showcase/">Showcase</a></li>
+        <li><a href="/linee-guida/contatti/">Contatti</a></li>
       </ul>
     </div>
   </div>
 </footer>
 
-<a href="#page_top" title="torna all'inizio del contenuto" class="scrollto_top"><span><span class="sr-only">torna all'inizio del contenuto</span></span></a>
+<a href="#page_top" class="scrollto_top"><span><span class="sr-only">torna all'inizio del contenuto</span></span></a>
 
 <p class="cookie-message sr-only" role="alert">
   Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.
 </p>
 
-<script src="/scripts/combined-ec8acb4123.js"></script>
+<script src="/scripts/combined-7c8e5787d0.js"></script>
 
 <script>
 (function (b, o, i, l, e, r) {
@@ -297,6 +297,7 @@ Buone pratiche e materiali a disposizione.
   b[l].l = +new Date;
   e = o.createElement(i);
   r = o.getElementsByTagName(i)[0];
+  e.async = 1;
   e.src = '//www.google-analytics.com/analytics.js';
   r.parentNode.insertBefore(e, r)
 }(window, document, 'script', 'ga'));

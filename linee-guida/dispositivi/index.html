@@ -15,7 +15,7 @@
     </script><![endif]-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Dispositivi | Linee guida di design per i siti web della PA</title>
+    <title>Compatibilità con i dispositivi | Linee guida di design per i siti web della PA</title>
     <meta name="description" content="Progettare il design dei siti web della Pubblica Amministrazione (versione alfa)">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -27,7 +27,7 @@
      -->
     <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300italic,300,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css' />
 
-    <link rel="stylesheet" href="/styles/combined-3e2c8ba3a7.css">
+    <link rel="stylesheet" href="/styles/combined-f5a45cd595.css">
 
     <!--[if lt IE 9]>
     <script src="/scripts/combined-94bd8f59ad.i8.js"></script>
@@ -130,12 +130,15 @@
     <li><a href="/">Home</a></li>
     <li>
       <a href="/linee-guida/il-progetto">Il progetto</a>
+      <ul>
+        <li><a href="/linee-guida/il-progetto/strategie">Strategie</a></li>
+      </ul>
     </li>
     <!-- TODO <li><a href="/linee-guida/riferimenti-normativi">Riferimenti normativi</a></li> -->
     <li><a href="/linee-guida/usabilita">Usabilità</a>
       <ul>
         <li>
-          <a href="/linee-guida/usabilita/principi">Principi</a>
+          <a href="/linee-guida/usabilita/criteri">Criteri di valutazione</a>
         </li>
         <li>
           <a href="/linee-guida/usabilita/misurazione">Misurazione</a>
@@ -153,22 +156,28 @@
     </li>
     <li><a href="/linee-guida/contenuti">Gestione contenuti</a></li>
     <li><a href="/linee-guida/infoarchitettura">Architettura dell'informazione</a></li>
-    <li><a href="/linee-guida/dispositivi">Dispositivi</a>
-    <li><a href="/linee-guida/header">Header</a></li>
-    <li><a href="/linee-guida/footer">Footer</a></li>
-    <li><a href="/linee-guida/layout">Layout</a>
-      <ul>
+
+    <li><a href="#visual-design" aria-label="Espandi / contrai il menu" aria-controls="visual-design">Visual design</a>
+      <ul id="visual-design">
         <li><a href="/linee-guida/layout/mobile-first">Mobile first</a></li>
+        <li><a href="/linee-guida/layout">Layout</a>
         <li><a href="/linee-guida/layout/griglie">Griglie</a></li>
-        <li><a href="/linee-guida/layout/homepage">Home page</a></li>
-        <li><a href="/linee-guida/layout/carousel">Carousel</a></li>
+        <li><a href="/linee-guida/tipografia">Tipografia</a></li>
+        <li><a href="/linee-guida/colori">Colori</a>
+          <ul>
+            <li><a href="/linee-guida/colori/palette-pac">Palette amministrazioni centrali</a></li>
+          </ul>
+        </li>
+        <li><a href="/linee-guida/bottoni">Bottoni</a></li>
+        <li><a href="/linee-guida/form">Form</a></li>
+        <li><a href="/linee-guida/iconografia">Iconografia</a></li>
+        <li><a href="/linee-guida/layout/homepage">Impostazione della home page</a></li>
+        <li><a href="/linee-guida/layout/carousel">Utilizzo di carousel</a></li>
+        <li><a href="/linee-guida/header">Header</a></li>
+        <li><a href="/linee-guida/footer">Footer</a></li>
       </ul>
     </li>
-    <li><a href="/linee-guida/tipografia">Tipografia</a></li>
-    <li><a href="/linee-guida/colori">Colori</a></li>
-    <li><a href="/linee-guida/bottoni">Bottoni</a>
-    <li><a href="/linee-guida/form">Form</a>
-    <li><a href="/linee-guida/iconografia">Iconografia</a></li>
+
     <li>
       <a href="/linee-guida/componenti">Componenti</a>
       <ul>
@@ -184,6 +193,8 @@
         </li>
       </ul>
     </li>
+    <li><a href="/linee-guida/dispositivi">Compatibilità con i dispositivi</a>
+    <li><a href="/linee-guida/il-progetto/indicazioni-generali">Indicazioni generali</a></li>
     <li><a href="/linee-guida/glossario">Glossario</a></li>
   </ul>
 
@@ -192,7 +203,7 @@
   </div><!--/.sidebar-offcanvas-->
 
   <article class="col-sm-12 col-md-8" id="main" tabindex="0">
-    <h2>Dispositivi</h2>
+    <h2>Compatibilità con i dispositivi</h2>
     <p>I contenuti e le funzionalità di un sito o un servizio devono poter essere fruibili
 su tutti i dispositivi più utilizzati dagli utenti.</p>
 <div class="lg-callout lg-callout-should">
@@ -249,7 +260,7 @@ oggi i browser sono più &quot;resilienti&quot; e spesso non si verifica il caso
 </div>
 
 
-  <a href="#page_top" title="torna all'inizio del contenuto" class="sr-only">torna all'inizio del contenuto</a>
+  <a href="#page_top" class="sr-only">torna all’inizio del contenuto</a>
 
 </div><!-- container -->
 
@@ -281,23 +292,23 @@ oggi i browser sono più &quot;resilienti&quot; e spesso non si verifica il caso
     </div>
     <div class="row">
       <ul class="col-xs-12 footer__links clearfix">
-        <li><a href="/linee-guida/privacy-policy/" title="privacy policy">Privacy</a></li>
-        <li><a href="/linee-guida/note-legali/" title="note legali">Note legali</a></li>
-        <li><a href="/linee-guida/credits/" title="credits">Credits</a></li>
-        <li><a href="/linee-guida/showcase/" title="credits">Showcase</a></li>
-        <li><a href="/linee-guida/contatti/" title="credits">Contatti</a></li>
+        <li><a href="/linee-guida/privacy-policy/">Privacy</a></li>
+        <li><a href="/linee-guida/note-legali/">Note legali</a></li>
+        <li><a href="/linee-guida/credits/">Credits</a></li>
+        <li><a href="/linee-guida/showcase/">Showcase</a></li>
+        <li><a href="/linee-guida/contatti/">Contatti</a></li>
       </ul>
     </div>
   </div>
 </footer>
 
-<a href="#page_top" title="torna all'inizio del contenuto" class="scrollto_top"><span><span class="sr-only">torna all'inizio del contenuto</span></span></a>
+<a href="#page_top" class="scrollto_top"><span><span class="sr-only">torna all'inizio del contenuto</span></span></a>
 
 <p class="cookie-message sr-only" role="alert">
   Questo sito utilizza cookie tecnici, analytics e di terze parti. Proseguendo nella navigazione accetti l’utilizzo dei cookie.
 </p>
 
-<script src="/scripts/combined-ec8acb4123.js"></script>
+<script src="/scripts/combined-7c8e5787d0.js"></script>
 
 <script>
 (function (b, o, i, l, e, r) {
@@ -309,6 +320,7 @@ oggi i browser sono più &quot;resilienti&quot; e spesso non si verifica il caso
   b[l].l = +new Date;
   e = o.createElement(i);
   r = o.getElementsByTagName(i)[0];
+  e.async = 1;
   e.src = '//www.google-analytics.com/analytics.js';
   r.parentNode.insertBefore(e, r)
 }(window, document, 'script', 'ga'));
