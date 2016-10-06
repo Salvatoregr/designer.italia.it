@@ -7263,6 +7263,16 @@ article table {
     -webkit-animation: octocat-wave 560ms ease-in-out;
             animation: octocat-wave 560ms ease-in-out; } }
 
+.nextPrev div {
+  padding-top: 2em;
+  color: #06c; }
+
+.nextPrev-next {
+  text-align: right; }
+
+.nextPrev a {
+  font-size: 1.5em; }
+
 /*
  *  jQuery cookiebar
  *  ------------------
