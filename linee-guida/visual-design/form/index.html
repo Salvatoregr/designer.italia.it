@@ -15,7 +15,7 @@
     </script><![endif]-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Iconografia | Linee guida di design per i servizi web della PA</title>
+    <title>Form | Linee guida di design per i servizi web della PA</title>
     <meta name="description" content="Progettare il design dei servizi web della Pubblica Amministrazione (versione alfa)">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -27,7 +27,7 @@
      -->
     <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300italic,300,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css' />
 
-    <link rel="stylesheet" href="/styles/combined-4534efe79f.css">
+    <link rel="stylesheet" href="/styles/combined-a25c4ca435.css">
 
     <!--[if lt IE 9]>
     <script src="/scripts/combined-94bd8f59ad.i8.js"></script>
@@ -43,8 +43,8 @@
 
     <div class="skiplink sr-only">
       <ul>
-        <li><a accesskey="2" href="/linee-guida/iconografia/#main">Vai al Contenuto</a></li>
-        <li><a accesskey="3" href="/linee-guida/iconografia/#menu">Vai alla navigazione del sito (sommario delle linee guida)</a></li>
+        <li><a accesskey="2" href="/linee-guida/visual-design/form/#main">Vai al Contenuto</a></li>
+        <li><a accesskey="3" href="/linee-guida/visual-design/form/#menu">Vai alla navigazione del sito (sommario delle linee guida)</a></li>
         <li><a href="https://github.com/italia-it/designer.italia.it">Vai al repository GitHub delle Linee Guida</a></li>
 <!--        <li><a href="#footer">Vai al Footer</a></li>-->
       </ul>
@@ -148,19 +148,19 @@
         <li><a href="/linee-guida/layout/mobile-first">Mobile first</a></li>
         <li><a href="/linee-guida/layout">Layout</a>
         <li><a href="/linee-guida/layout/griglie">Griglie</a></li>
-        <li><a href="/linee-guida/tipografia">Tipografia</a></li>
+        <li><a href="/linee-guida/visual-design/tipografia">Tipografia</a></li>
         <li><a href="/linee-guida/colori">Colori</a>
           <ul>
             <li><a href="/linee-guida/colori/palette-pac">Palette amministrazioni centrali</a></li>
           </ul>
         </li>
-        <li><a href="/linee-guida/bottoni">Bottoni</a></li>
-        <li><a href="/linee-guida/form">Form</a></li>
-        <li><a href="/linee-guida/iconografia">Iconografia</a></li>
+        <li><a href="/linee-guida/visual-design/bottoni">Bottoni</a></li>
+        <li><a href="/linee-guida/visual-design/form">Form</a></li>
+        <li><a href="/linee-guida/visual-design/iconografia">Iconografia</a></li>
         <li><a href="/linee-guida/layout/homepage">Impostazione della home page</a></li>
         <li><a href="/linee-guida/layout/carousel">Utilizzo di carousel</a></li>
-        <li><a href="/linee-guida/header">Header</a></li>
-        <li><a href="/linee-guida/footer">Footer</a></li>
+        <li><a href="/linee-guida/visual-design/header">Header</a></li>
+        <li><a href="/linee-guida/visual-design/footer">Footer</a></li>
         <li>
           <a href="/linee-guida/componenti/spid">Componenti SPID</a>
           <ul>
@@ -204,42 +204,124 @@
   </div><!--/.sidebar-offcanvas-->
 
   <article class="col-sm-12 col-md-8" id="main" tabindex="0">
-    <h2>Iconografia</h2>
+    <h2>Form</h2>
     <div class="lg-callout lg-callout-must">
-<mark>SI DEVE</mark> Quando si utilizzano delle icone è necessario assicurare una chiara comprensione del loro significato. Pertanto ogni icona dovrà essere associata a un tooltip che ne chiarisca l’azione. La stessa icona non deve essere utilizzata per indicare azioni diverse all’interno della stesso sito.
+<mark>SI DEVE</mark> Nei form ogni campo deve essere sempre associato, anche attraverso il tag <code>&lt;label&gt;</code>,
+a un&#39;etichetta che ne descriva in maniera chiara il contenuto che deve essere inserito. 
+Per essere sempre leggibile, l’etichetta deve essere posizionata esternamente al campo. Deve essere 
+consentito inoltre lo spostamento da un campo all’altro tramite il tasto Tab.
 </div>
 
-<p>Al fine di garantire una coerenza visiva si consiglia di utilizzare icone provenienti da un unico set grafico come,
-ad esempio, quelle disponibili gratuitamente su <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a>.</p>
-<!-- La dimensione minima di un'icona è di 30dp -->
-<!-- ![](/images/tavola_31.png) -->
-<p>È opportuno utilizzare solo icone e immagini che siano realmente necessari alla comprensione delle informazioni da parte dell&#39;utente.
-Evitare elementi decorativi non essenziali.</p>
-<h3 id="badge">Badge</h3>
-<pre><code class="lang-markup">&lt;p&gt;Commenti &lt;span class=&quot;badge&quot;&gt;4&lt;/span&gt;&lt;/p&gt;
+<pre><code class="lang-markup">&lt;form class=&quot;form&quot;&gt;
+
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;form-group col-md-6&quot;&gt;
+      &lt;label for=&quot;nome&quot;&gt;Nome&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; id=&quot;nome&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group col-md-6&quot;&gt;
+      &lt;label for=&quot;cognome&quot;&gt;Cognome&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; id=&quot;cognome&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;form-group col-md-6&quot;&gt;
+      &lt;label for=&quot;indirizzo&quot;&gt;Indirizzo&lt;/label&gt;
+      &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;indirizzo&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group col-md-6&quot;&gt;
+      &lt;label for=&quot;citta&quot;&gt;Città&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; id=&quot;citta&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;form-group col-md-3&quot;&gt;
+      &lt;label for=&quot;via&quot;&gt;Via&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; id=&quot;via&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group col-md-3&quot;&gt;
+      &lt;label for=&quot;cap&quot;&gt;CAP&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; id=&quot;cap&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group col-md-6&quot;&gt;
+      &lt;label for=&quot;provincia&quot;&gt;Provincia&lt;/label&gt;
+      &lt;select class=&quot;form-control&quot; id=&quot;provincia&quot; required&gt;
+        &lt;option disabled selected&gt;seleziona una provincia&lt;/option&gt;
+        &lt;option&gt;provincia&lt;/option&gt;
+        &lt;option&gt;provincia&lt;/option&gt;
+        &lt;option&gt;provincia&lt;/option&gt;
+        &lt;option&gt;provincia&lt;/option&gt;
+      &lt;/select&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/form&gt;
 </code></pre>
-<pre><code class="lang-markup">&lt;ul class=&quot;nav nav-pills&quot; role=&quot;tablist&quot;&gt;
-  &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home &lt;span class=&quot;badge&quot;&gt;42&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Profilo utente&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
+<!-- ![html](/images/tavola_25.png) -->
+<h3 id="form-errore">Form errore</h3>
+<div class="lg-callout lg-callout-must">
+<mark>SI DEVE</mark> In caso di errori o di mancata compilazione dei campi di un form si dovrà sempre evidenziare in maniera immediatamente percepibile quale sia il campo, o i campi, che non soddisfano le richieste, aggiungendo l’indicazione dell’azione da compiere per il corretto completamento.
+</div>
+
+<pre><code class="lang-markup">&lt;form class=&quot;form&quot;&gt;
+
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;form-group has-error col-md-6&quot;&gt;
+      &lt;label for=&quot;nome&quot;&gt;Nome&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; id=&quot;nome&quot; placeholder=&quot;Errore - bordo #ff0000&quot;&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;form-group has-warning col-md-6&quot;&gt;
+      &lt;label for=&quot;cognome&quot;&gt;Cognome&lt;/label&gt;
+      &lt;input class=&quot;form-control&quot; id=&quot;cognome&quot; placeholder=&quot;Warning - bordo #e5ce23&quot;&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+
+&lt;/form&gt;
 </code></pre>
-<pre><code class="lang-markup">&lt;span class=&quot;ita-colore-blu-italia-50 badge-container&quot;&gt;
-  &lt;span class=&quot;glyphicon glyphicon-camera&quot; aria-hidden=&quot;true&quot; title=&quot;foto&quot;&gt;&lt;/span&gt;
-  &lt;span class=&quot;badge&quot;&gt;4&lt;/span&gt;
-  &lt;span class=&quot;sr-only&quot;&gt;foto&lt;/span&gt;
-&lt;/span&gt;
-&lt;span class=&quot;ita-colore-blu-italia-50 badge-container&quot;&gt;
-  &lt;span class=&quot;glyphicon glyphicon-facetime-video&quot; aria-hidden=&quot;true&quot; title=&quot;video&quot;&gt;&lt;/span&gt;
-  &lt;span class=&quot;badge&quot;&gt;4&lt;/span&gt;
-  &lt;span class=&quot;sr-only&quot;&gt;video&lt;/span&gt;
-&lt;/span&gt;
-&lt;span class=&quot;ita-colore-blu-italia-50 badge-container&quot;&gt;
-  &lt;span class=&quot;glyphicon glyphicon-picture&quot; aria-hidden=&quot;true&quot; title=&quot;immagini&quot;&gt;&lt;/span&gt;
-  &lt;span class=&quot;badge&quot;&gt;4&lt;/span&gt;
-  &lt;span class=&quot;sr-only&quot;&gt;immagini&lt;/span&gt;
-&lt;/span&gt;
+<!-- ![](/images/tavola_26.png) -->
+<h3 id="alert">Alert</h3>
+<h4 id="alert-per-errori">Alert per errori</h4>
+<ul>
+<li>Testo  #1e1212</li>
+<li>Sfondo #ffcbcb</li>
+<li>Bordo #b50000</li>
+</ul>
+<pre><code class="lang-markup">&lt;div class=&quot;alert alert-danger&quot; role=&quot;alert&quot;&gt;
+  Messaggi per errori
+&lt;/div&gt;
 </code></pre>
-<!-- ![html](/images/tavola_32.png) -->
+<h4 id="alert-per-informazioni">Alert per informazioni</h4>
+<ul>
+<li>Testo  #006366</li>
+<li>Sfondo #c6f3f5</li>
+<li>Bordo #00c5ca</li>
+</ul>
+<pre><code class="lang-markup">&lt;div class=&quot;alert alert-info&quot; role=&quot;alert&quot;&gt;
+  Messaggi per informazioni
+&lt;/div&gt;
+</code></pre>
+<h4 id="alert-per-messaggi-di-successo">Alert per messaggi di successo</h4>
+<ul>
+<li>Testo  #006366</li>
+<li>Sfondo #c6f3f5</li>
+<li>Bordo #00c5ca</li>
+</ul>
+<pre><code class="lang-markup">&lt;div class=&quot;alert alert-success&quot; role=&quot;alert&quot;&gt;
+  Messaggi di successo
+&lt;/div&gt;
+</code></pre>
+<h4 id="alert-per-messaggi-di-attenzione">Alert per messaggi di attenzione</h4>
+<ul>
+<li>Testo  #685815</li>
+<li>Sfondo #ffef9f</li>
+<li>Bordo #e5ce23</li>
+</ul>
+<pre><code class="lang-markup">&lt;div class=&quot;alert alert-warning&quot; role=&quot;alert&quot;&gt;
+  Messaggi di allerta
+&lt;/div&gt;
+</code></pre>
+<!-- ![html](/images/tavola_27_01.png) -->
 
   </article>
 

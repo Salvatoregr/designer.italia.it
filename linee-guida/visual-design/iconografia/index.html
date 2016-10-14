@@ -15,7 +15,7 @@
     </script><![endif]-->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Bottoni | Linee guida di design per i servizi web della PA</title>
+    <title>Iconografia | Linee guida di design per i servizi web della PA</title>
     <meta name="description" content="Progettare il design dei servizi web della Pubblica Amministrazione (versione alfa)">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -27,7 +27,7 @@
      -->
     <link href='//fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300italic,300,400italic,600,600italic,700,700italic,900' rel='stylesheet' type='text/css' />
 
-    <link rel="stylesheet" href="/styles/combined-4534efe79f.css">
+    <link rel="stylesheet" href="/styles/combined-a25c4ca435.css">
 
     <!--[if lt IE 9]>
     <script src="/scripts/combined-94bd8f59ad.i8.js"></script>
@@ -43,8 +43,8 @@
 
     <div class="skiplink sr-only">
       <ul>
-        <li><a accesskey="2" href="/linee-guida/bottoni/#main">Vai al Contenuto</a></li>
-        <li><a accesskey="3" href="/linee-guida/bottoni/#menu">Vai alla navigazione del sito (sommario delle linee guida)</a></li>
+        <li><a accesskey="2" href="/linee-guida/visual-design/iconografia/#main">Vai al Contenuto</a></li>
+        <li><a accesskey="3" href="/linee-guida/visual-design/iconografia/#menu">Vai alla navigazione del sito (sommario delle linee guida)</a></li>
         <li><a href="https://github.com/italia-it/designer.italia.it">Vai al repository GitHub delle Linee Guida</a></li>
 <!--        <li><a href="#footer">Vai al Footer</a></li>-->
       </ul>
@@ -148,19 +148,19 @@
         <li><a href="/linee-guida/layout/mobile-first">Mobile first</a></li>
         <li><a href="/linee-guida/layout">Layout</a>
         <li><a href="/linee-guida/layout/griglie">Griglie</a></li>
-        <li><a href="/linee-guida/tipografia">Tipografia</a></li>
+        <li><a href="/linee-guida/visual-design/tipografia">Tipografia</a></li>
         <li><a href="/linee-guida/colori">Colori</a>
           <ul>
             <li><a href="/linee-guida/colori/palette-pac">Palette amministrazioni centrali</a></li>
           </ul>
         </li>
-        <li><a href="/linee-guida/bottoni">Bottoni</a></li>
-        <li><a href="/linee-guida/form">Form</a></li>
-        <li><a href="/linee-guida/iconografia">Iconografia</a></li>
+        <li><a href="/linee-guida/visual-design/bottoni">Bottoni</a></li>
+        <li><a href="/linee-guida/visual-design/form">Form</a></li>
+        <li><a href="/linee-guida/visual-design/iconografia">Iconografia</a></li>
         <li><a href="/linee-guida/layout/homepage">Impostazione della home page</a></li>
         <li><a href="/linee-guida/layout/carousel">Utilizzo di carousel</a></li>
-        <li><a href="/linee-guida/header">Header</a></li>
-        <li><a href="/linee-guida/footer">Footer</a></li>
+        <li><a href="/linee-guida/visual-design/header">Header</a></li>
+        <li><a href="/linee-guida/visual-design/footer">Footer</a></li>
         <li>
           <a href="/linee-guida/componenti/spid">Componenti SPID</a>
           <ul>
@@ -204,121 +204,43 @@
   </div><!--/.sidebar-offcanvas-->
 
   <article class="col-sm-12 col-md-8" id="main" tabindex="0">
-    <h2>Bottoni</h2>
-    <!-- ![](/images/tavola_14.png) -->
-<p>Di seguito sono riportate le dimensioni dei bottoni da utilizzare all’interno del sito
-sia nella versione mobile che desktop. I colori sono invece personalizzabili in base alla palette 
-colore che sarà stata individuata per ciascun sito web.</p>
-<pre><code class="lang-markup">&lt;div class=&quot;row&quot;&gt;
+    <h2>Iconografia</h2>
+    <div class="lg-callout lg-callout-must">
+<mark>SI DEVE</mark> Quando si utilizzano delle icone è necessario assicurare una chiara comprensione del loro significato. Pertanto ogni icona dovrà essere associata a un tooltip che ne chiarisca l’azione. La stessa icona non deve essere utilizzata per indicare azioni diverse all’interno della stesso sito.
+</div>
 
-  &lt;div class=&quot;col-md-6&quot;&gt;
-    &lt;p class=&quot;text-center&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Invia richiesta&lt;/button&gt;
-    &lt;/p&gt;
-    &lt;div class=&quot;well well-sm&quot;&gt;
-      &lt;small&gt;&lt;strong&gt;BOTTONE NORMALE&lt;/strong&gt;&lt;/small&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;col-md-6&quot;&gt;
-    &lt;p class=&quot;text-center&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-default active&quot;&gt;Invia richiesta&lt;/button&gt;
-    &lt;/p&gt;
-    &lt;div class=&quot;well well-sm&quot;&gt;
-      &lt;small&gt;&lt;strong&gt;BOTTONE SELEZIONATO&lt;/strong&gt;&lt;/small&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div class=&quot;row&quot;&gt;
-
-  &lt;div class=&quot;col-md-6&quot;&gt;
-    &lt;p class=&quot;text-center&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg btn-block&quot;&gt;Invia richiesta&lt;/button&gt;
-    &lt;/p&gt;
-    &lt;div class=&quot;well well-sm&quot;&gt;
-      &lt;small&gt;&lt;strong&gt;BOTTONE BLOCK LEVEL&lt;/strong&gt;&lt;/small&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;col-md-6&quot;&gt;
-    &lt;p class=&quot;text-center&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg btn-block active&quot;&gt;Invia richiesta&lt;/button&gt;
-    &lt;/p&gt;
-    &lt;div class=&quot;well well-sm&quot;&gt;
-      &lt;small&gt;&lt;strong&gt;BOTTONE BLOCK LEVEL SELEZIONATO&lt;/strong&gt;&lt;/small&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/div&gt;
-
-&lt;div class=&quot;row&quot;&gt;
-
-  &lt;div class=&quot;col-md-6&quot;&gt;
-    &lt;p class=&quot;text-center&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-warning btn-lg btn-block&quot;&gt;Invia richiesta&lt;/button&gt;
-    &lt;/p&gt;
-    &lt;div class=&quot;well well-sm&quot;&gt;
-      &lt;small&gt;&lt;strong&gt;BOTTONE WARNING&lt;/strong&gt;&lt;/small&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-  &lt;div class=&quot;col-md-6&quot;&gt;
-    &lt;p class=&quot;text-center&quot;&gt;
-      &lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-lg btn-block&quot;&gt;Invia richiesta&lt;/button&gt;
-    &lt;/p&gt;
-    &lt;div class=&quot;well well-sm&quot;&gt;
-      &lt;small&gt;&lt;strong&gt;BOTTONE INFO&lt;/strong&gt;&lt;/small&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;
-
-&lt;/div&gt;
+<p>Al fine di garantire una coerenza visiva si consiglia di utilizzare icone provenienti da un unico set grafico come,
+ad esempio, quelle disponibili gratuitamente su <a href="https://fortawesome.github.io/Font-Awesome/">Font Awesome</a>.</p>
+<!-- La dimensione minima di un'icona è di 30dp -->
+<!-- ![](/images/tavola_31.png) -->
+<p>È opportuno utilizzare solo icone e immagini che siano realmente necessari alla comprensione delle informazioni da parte dell&#39;utente.
+Evitare elementi decorativi non essenziali.</p>
+<h3 id="badge">Badge</h3>
+<pre><code class="lang-markup">&lt;p&gt;Commenti &lt;span class=&quot;badge&quot;&gt;4&lt;/span&gt;&lt;/p&gt;
 </code></pre>
-<h4 id="bottoni-bootstrap">Bottoni Bootstrap</h4>
-<pre><code class="lang-markup">&lt;div class=&quot;row&quot;&gt;     
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg btn-block&quot;&gt;Block level button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg btn-block active&quot;&gt;Block level button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;     
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot;&gt;Large button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg active&quot;&gt;Large button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;     
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default active&quot;&gt;Default button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;     
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-sm&quot;&gt;Small button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-sm active&quot;&gt;Small button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
-&lt;div class=&quot;row&quot;&gt;     
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs&quot;&gt;Extra small button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-  &lt;div class=&quot;col-md-6&quot;&gt;
-      &lt;p class=&quot;text-center&quot;&gt;&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-xs active&quot;&gt;Extra small button&lt;/button&gt;&lt;/p&gt;
-  &lt;/div&gt;
-&lt;/div&gt;
+<pre><code class="lang-markup">&lt;ul class=&quot;nav nav-pills&quot; role=&quot;tablist&quot;&gt;
+  &lt;li role=&quot;presentation&quot; class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;Home &lt;span class=&quot;badge&quot;&gt;42&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li role=&quot;presentation&quot;&gt;&lt;a href=&quot;#&quot;&gt;Profilo utente&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
 </code></pre>
-<!-- ![](/images/tavola_15.png) -->
-<!-- ![](/images/tavola_16.png) -->
+<pre><code class="lang-markup">&lt;span class=&quot;ita-colore-blu-italia-50 badge-container&quot;&gt;
+  &lt;span class=&quot;glyphicon glyphicon-camera&quot; aria-hidden=&quot;true&quot; title=&quot;foto&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;badge&quot;&gt;4&lt;/span&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;foto&lt;/span&gt;
+&lt;/span&gt;
+&lt;span class=&quot;ita-colore-blu-italia-50 badge-container&quot;&gt;
+  &lt;span class=&quot;glyphicon glyphicon-facetime-video&quot; aria-hidden=&quot;true&quot; title=&quot;video&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;badge&quot;&gt;4&lt;/span&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;video&lt;/span&gt;
+&lt;/span&gt;
+&lt;span class=&quot;ita-colore-blu-italia-50 badge-container&quot;&gt;
+  &lt;span class=&quot;glyphicon glyphicon-picture&quot; aria-hidden=&quot;true&quot; title=&quot;immagini&quot;&gt;&lt;/span&gt;
+  &lt;span class=&quot;badge&quot;&gt;4&lt;/span&gt;
+  &lt;span class=&quot;sr-only&quot;&gt;immagini&lt;/span&gt;
+&lt;/span&gt;
+</code></pre>
+<!-- ![html](/images/tavola_32.png) -->
+
   </article>
 
 </div>
