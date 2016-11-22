@@ -6840,11 +6840,9 @@ body {
     overflow: scroll;
     display: block;
     height: 100%; }
-  .row-offcanvas-right
-.sidebar-offcanvas {
+  .row-offcanvas-right .sidebar-offcanvas {
     right: -80%; }
-  .row-offcanvas-left
-.sidebar-offcanvas {
+  .row-offcanvas-left .sidebar-offcanvas {
     left: -80%; }
   .row-offcanvas.active .sidebar-offcanvas {
     left: 0;
@@ -6940,12 +6938,10 @@ body {
 
 #nav-toggle.active span:before {
   -webkit-transform: rotate(45deg);
-      -ms-transform: rotate(45deg);
           transform: rotate(45deg); }
 
 #nav-toggle.active span:after {
   -webkit-transform: rotate(-45deg);
-      -ms-transform: rotate(-45deg);
           transform: rotate(-45deg); }
 
 footer {
