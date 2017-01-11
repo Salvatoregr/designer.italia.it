@@ -967,6 +967,11 @@ Prism.languages.js = Prism.languages.javascript;
 
   $('article > p > img, .lg-showcase > img').on('click', function() {
     $('<img class="lg-modal modal fade" src="' + $(this).attr('src') + '">').modal('show');
+    $(document).one('click', function() {
+      console.log('ok');
+      $('.lg-modal').modal('hide');
+    });
+    return false;
   });
 
   /* Cookie law */
